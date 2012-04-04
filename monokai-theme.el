@@ -4,7 +4,7 @@
 ;;
 ;; Author: Lorenzo Villani <lorenzo@villani.me>
 ;; URL: https://github.com/lvillani/el-monokai-theme
-;; Version: 0.0.6
+;; Version: 0.0.7
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,11 +21,9 @@
 (unless (>= 24 emacs-major-version)
   (error "monokai-theme requires Emacs 24 or later."))
 
-;;;###autoload
 (deftheme monokai
   "Monokai color theme")
 
-;;;###autoload
 (let ((monokai-blue-light "#89BDFF")
       (monokai-gray "#595959")
       (monokai-gray-darker "#383830")
@@ -76,7 +74,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;;;###autoload
 (provide-theme 'monokai)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
 
 ;;; monokai-theme.el ends here
