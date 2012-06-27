@@ -66,6 +66,8 @@
    `(ido-first-match ((t (:foreground ,monokai-purple))))
    `(ido-only-match ((t (:foreground ,monokai-green))))
    `(ido-subdir ((t (:foreground ,monokai-blue-light))))
+   ;; Whitespace
+   `(whitespace-space ((t (:foreground ,monokai-gray))))
    ;; Yasnippet
    `(yas/field-highlight-face ((t (:background ,monokai-gray-darker))))))
 
