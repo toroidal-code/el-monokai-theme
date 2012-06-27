@@ -19,5 +19,5 @@ version of Emacs.
 Project Information
 ===================
 
- * URI: https://github.com/lvillani/el-monokai-theme
+ * Home Page: https://github.com/lvillani/el-monokai-theme
  * Reporting issues: https://github.com/lvillani/el-monokai-theme/issues
