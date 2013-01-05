@@ -16,6 +16,14 @@ version of Emacs.
 
 
 
+Screenshot
+==========
+
+![Screenshot](https://raw.github.com/lvillani/el-monokai-theme/master/screenshot/intel_panel.png)
+
+
+
+
 Project Information
 ===================
 
