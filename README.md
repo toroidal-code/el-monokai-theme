@@ -13,6 +13,12 @@ This package is available from [Marmalade](http://marmalade-repo.org/). Refer
 to its documentation to learn how to use Marmalade and `package.el` with your
 version of Emacs.
 
+Evaluating (`C-x C-e`) this form in a scratch buffer should suffice:
+
+    (progn
+      (package-refresh-contents)
+      (package-install 'monokai-theme))
+
 
 
 
