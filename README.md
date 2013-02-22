@@ -1,7 +1,10 @@
-Contents
-========
+Monokai Color Theme for Emacs 24
+================================
 
 Monokai color theme for Emacs. **Requires Emacs 24**.
+
+ * Home Page: https://github.com/lvillani/el-monokai-theme
+ * Reporting issues: https://github.com/lvillani/el-monokai-theme/issues
 
 
 
@@ -30,12 +33,3 @@ Screenshot
 ==========
 
 ![Screenshot](https://raw.github.com/lvillani/el-monokai-theme/master/screenshot/intel_panel.png)
-
-
-
-
-Project Information
-===================
-
- * Home Page: https://github.com/lvillani/el-monokai-theme
- * Reporting issues: https://github.com/lvillani/el-monokai-theme/issues
