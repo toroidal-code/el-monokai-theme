@@ -19,7 +19,11 @@ Evaluating (`C-x C-e`) this form in a scratch buffer should suffice:
       (package-refresh-contents)
       (package-install 'monokai-theme))
 
+Then enable it by adding:
 
+    (load-theme 'monokai t)
+
+To your `~/.emacs` or `~/.emacs.d/init.el` file.
 
 
 Screenshot
