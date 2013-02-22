@@ -16,17 +16,18 @@ This package is available from [Marmalade](http://marmalade-repo.org/). Refer
 to its documentation to learn how to use Marmalade and `package.el` with your
 version of Emacs.
 
-Evaluating (`C-x C-e`) this form in a scratch buffer should suffice:
+To install the theme evaluate (`C-x C-e`) this form in a scratch buffer:
 
     (progn
       (package-refresh-contents)
       (package-install 'monokai-theme))
 
-Then enable it by adding:
+Then enable it by adding this line to your `~/.emacs` or `~/.emacs.d/init.el`
+file:
 
     (load-theme 'monokai t)
 
-To your `~/.emacs` or `~/.emacs.d/init.el` file.
+
 
 
 Screenshot
