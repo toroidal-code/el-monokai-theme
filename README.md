@@ -9,6 +9,15 @@ Monokai color theme for Emacs. **Requires Emacs 24**.
 
 
 
+Looking for a New Maintainer
+============================
+
+Due to time constraints and the fact that I'm not using Emacs at the
+moment, I am looking for people willing to co-maintain this project.
+If interested drop me a line by sending an email to <lorenzo@villani.me>.
+
+
+
 Installation
 ============
 
