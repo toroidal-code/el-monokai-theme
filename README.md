@@ -9,15 +9,6 @@ Monokai color theme for Emacs. **Requires Emacs 24**.
 
 
 
-Looking for a New Maintainer
-============================
-
-Due to time constraints and the fact that I'm not using Emacs at the
-moment, I am looking for people willing to co-maintain this project.
-If interested drop me a line by sending an email to <lorenzo@villani.me>.
-
-
-
 Installation
 ============
 
@@ -25,7 +16,7 @@ This package is available from [Marmalade](http://marmalade-repo.org/). Refer
 to its documentation to learn how to use Marmalade and `package.el` with your
 version of Emacs.
 
-To install the theme evaluate (`C-x C-e`) this form in a scratch buffer:
+To install the theme evaluate (`C-x C-e`) this elisp form in a scratch buffer:
 
     (progn
       (package-refresh-contents)
