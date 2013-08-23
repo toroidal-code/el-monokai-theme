@@ -66,6 +66,8 @@
    `(ido-first-match ((t (:foreground ,monokai-purple))))
    `(ido-only-match ((t (:foreground ,monokai-green))))
    `(ido-subdir ((t (:foreground ,monokai-blue-light))))
+   ;; ECB
+   `(ecb-default-highlight-face ((t (:foreground ,monokai-green))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
    ;; Yasnippet
