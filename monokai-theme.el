@@ -24,7 +24,7 @@
 (deftheme monokai
   "Monokai color theme")
 
-(let ((monokai-blue-light "#89BDFF")
+(let ((monokai-blue-light "#66D9EF")
       (monokai-gray "#595959")
       (monokai-gray-darker "#383830")
       (monokai-gray-darkest "#141411")
@@ -38,7 +38,8 @@
       (monokai-purple-light "#FD5FF1")
       (monokai-yellow "#E6DB74")
       (monokai-yellow-dark "#75715E")
-      (monokai-yellow-light "#F8F8F2"))
+      (monokai-yellow-light "#F8F8F2")
+	  (monokai-orange "#FD971F"))
   (custom-theme-set-faces
    'monokai
    ;; Frame
@@ -48,7 +49,11 @@
    `(minibuffer-prompt ((t (:foreground ,monokai-yellow-dark))))
    `(modeline ((t (:background ,monokai-gray-lightest :foreground ,monokai-gray-light))))
    `(region ((t (:background ,monokai-gray-darker))))
+   `(fringe ((t (:background ,monokai-grey-dark))))
    `(show-paren-match-face ((t (:background ,monokai-gray-lightest))))
+   `(scroll-bar ((t (:foreground ,monokai-gray-light :background ,monokai-grey-dark))))
+   `(popup-scroll-bar-background-face ((t (:background ,monokai-grey-dark))))
+   `(popup-scroll-bar-foreground-face ((t (:foreground ,monokai-gray-light))))
    ;; Main
    `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
@@ -58,7 +63,7 @@
    `(font-lock-keyword-face ((t (:foreground ,monokai-magenta))))
    `(font-lock-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-type-face ((t (:foreground ,monokai-blue-light))))
-   `(font-lock-variable-name-face ((t (:foreground ,monokai-magenta))))
+   `(font-lock-variable-name-face ((t (:foreground ,monokai-green))))
    `(font-lock-warning-face ((t (:bold t :foreground ,monokai-purple-light))))
    ;; CUA
    `(cua-rectangle ((t (:background ,monokai-gray-darkest))))
@@ -68,6 +73,24 @@
    `(ido-subdir ((t (:foreground ,monokai-blue-light))))
    ;; ECB
    `(ecb-default-highlight-face ((t (:foreground ,monokai-green))))
+   ;; tuareg
+   `(tuareg-font-lock-governing-face ((t (:foreground ,monokai-magenta))))
+   `(tuareg-font-lock-operator-face ((t (:foreground ,monokai-gray-light))))
+   ;; helm
+   `(helm-source-header ((t (:foreground ,monokai-purple :background ,monokai-gray-darkest :height 1.2))))
+   `(helm-visible-mark ((t (nil))))
+   `(helm-header ((t (nil))))
+   `(helm-candidate-number ((t (:underline t :foreground ,monokai-purple :background nil))))
+   `(helm-selection ((t (:foreground ,monokai-green :background ,monokai-gray-darker))))
+   `(helm-separator ((t (:background ,monokai-gray-darkest))))
+   `(helm-action ((t (nil))))
+   ;; helm find file
+   `(helm-ff-prefix ((t (nil))))
+   `(helm-ff-executable ((t (:foreground ,monokai-magenta))))
+   `(helm-ff-directory ((t (:foreground ,monokai-blue-light :background nil))))
+   `(helm-ff-symlink ((t (:foreground ,monokai-purple-light))))
+   `(helm-ff-invalid-symlink ((t (:foreground nil :background ,monokai-yellow))))
+   `(helm-ff-file ((t (:inherit default))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
    ;; Yasnippet
