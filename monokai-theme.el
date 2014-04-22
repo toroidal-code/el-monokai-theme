@@ -4,7 +4,7 @@
 ;;
 ;; Author: Lorenzo Villani <lorenzo@villani.me>
 ;; URL: https://github.com/lvillani/el-monokai-theme
-;; Version: 0.0.10
+;; Version: 0.0.11
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
