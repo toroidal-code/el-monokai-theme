@@ -1,7 +1,7 @@
 Monokai Color Theme for Emacs 24
 ================================
 
-![Gittip](http://img.shields.io/gittip/lvillani.svg)
+[![Gittip](http://img.shields.io/gittip/lvillani.svg)](https://www.gittip.com/lvillani/)
 
 Monokai color theme for Emacs. **Requires Emacs 24**.
 
