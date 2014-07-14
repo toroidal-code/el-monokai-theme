@@ -21,6 +21,12 @@
 (unless (>= 24 emacs-major-version)
   (error "monokai-theme requires Emacs 24 or later."))
 
+
+(warn "monokai-theme.el: THIS PROJECT IS BEING DISCONTINUED")
+(warn "monokai-theme.el: Please switch to monokai-theme from MELPA")
+(warn "monokai-theme.el: For more information see: https://github.com/lvillani/el-monokai-theme")
+
+
 (deftheme monokai
   "Monokai color theme")
 
