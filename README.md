@@ -1,12 +1,16 @@
 Monokai Color Theme for Emacs 24
 ================================
 
-[![Gittip](http://img.shields.io/gittip/lvillani.svg)](https://www.gittip.com/lvillani/)
+PROJECT DISCONTINUED
+====================
 
-Monokai color theme for Emacs. **Requires Emacs 24**.
+This project is being discontinued. **No new patches or features requests will be accepted.**
 
- * Home Page: https://github.com/lvillani/el-monokai-theme
- * Reporting issues: https://github.com/lvillani/el-monokai-theme/issues
+Users are advised to switch to <https://github.com/oneKelvinSmith/monokai-emacs> which is also
+available from [MELPA](http://melpa.milkbox.net/).
+
+This repository will be deleted by December and its contents will be moved to the
+[attic](https://github.com/lvillani/attic) repository.
 
 
 
