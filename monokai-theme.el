@@ -1,10 +1,10 @@
-;;; monokai-theme.el --- REQUIRES EMACS 24: Monokai Color Theme for Emacs.
+;;; monokai-theme.el --- DEPRECATED: Monokai Color Theme for Emacs.
 
 ;; Copyright (C) 2012 Lorenzo Villani.
 ;;
 ;; Author: Lorenzo Villani <lorenzo@villani.me>
 ;; URL: https://github.com/lvillani/el-monokai-theme
-;; Version: 0.0.11
+;; Version: 0.0.12
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
