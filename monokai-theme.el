@@ -21,12 +21,6 @@
 (unless (>= 24 emacs-major-version)
   (error "monokai-theme requires Emacs 24 or later."))
 
-
-(warn "monokai-theme.el: THIS PROJECT IS BEING DISCONTINUED")
-(warn "monokai-theme.el: Please switch to monokai-theme from MELPA")
-(warn "monokai-theme.el: For more information see: https://github.com/lvillani/el-monokai-theme")
-
-
 (deftheme monokai
   "Monokai color theme")
 
@@ -44,17 +38,22 @@
       (monokai-purple-light "#FD5FF1")
       (monokai-yellow "#E6DB74")
       (monokai-yellow-dark "#75715E")
-      (monokai-yellow-light "#F8F8F2"))
+      (monokai-yellow-light "#F8F8F2")
+      (monokai-orange "#FD971F"))
   (custom-theme-set-faces
    'monokai
    ;; Frame
    `(default ((t (:foreground ,monokai-yellow-light :background ,monokai-grey-dark))))
-   `(cursor ((t (:foreground ,monokai-magenta))))
+   `(cursor ((t (:background ,monokai-yellow-light :foreground ,monokai-magenta :inverse-video t))))
+   `(mouse ((t (:background ,monokai-yellow-light :foreground ,monokai-magenta :inverse-video t))))
    `(hl-line ((t (:background ,monokai-gray-darkest))))
-   `(minibuffer-prompt ((t (:foreground ,monokai-yellow-dark))))
+   `(highlight ((t (:background ,monokai-gray-darkest))))
+   `(minibuffer-prompt ((t (:foreground ,monokai-blue-light))))
    `(modeline ((t (:background ,monokai-gray-lightest :foreground ,monokai-gray-light))))
    `(region ((t (:background ,monokai-gray-darker))))
    `(show-paren-match-face ((t (:background ,monokai-gray-lightest))))
+   `(link ((t (:foreground ,monokai-blue-light :underline t))))
+   `(link-visited ((t (:foreground ,monokai-blue-light :underline t :slant italic))))
    ;; Main
    `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
@@ -63,8 +62,8 @@
    `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-magenta))))
    `(font-lock-string-face ((t (:foreground ,monokai-yellow))))
-   `(font-lock-type-face ((t (:foreground ,monokai-blue-light))))
-   `(font-lock-variable-name-face ((t (:foreground ,monokai-magenta))))
+   `(font-lock-type-face ((t (:foreground ,monokai-blue-light :slant italic))))
+   `(font-lock-variable-name-face ((t (:foreground ,monokai-orange))))
    `(font-lock-warning-face ((t (:bold t :foreground ,monokai-purple-light))))
    ;; CUA
    `(cua-rectangle ((t (:background ,monokai-gray-darkest))))
@@ -76,8 +75,12 @@
    `(ecb-default-highlight-face ((t (:foreground ,monokai-green))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
+   `(trailing-whitespace ((t (:foreground ,monokai-purple-light))))
    ;; Yasnippet
-   `(yas/field-highlight-face ((t (:background ,monokai-gray-darker))))))
+   `(yas/field-highlight-face ((t (:background ,monokai-gray-darker))))
+   ;; zencoding uses this
+   `(tooltip ((t (:background ,monokai-yellow-light :foreground ,monokai-yellow-dark))))))
+
 
 ;;;###autoload
 (when load-file-name
