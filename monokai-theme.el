@@ -55,9 +55,9 @@
    `(link ((t (:foreground ,monokai-blue-light :underline t))))
    `(link-visited ((t (:foreground ,monokai-blue-light :underline t :slant italic))))
    ;; Main
-   `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
+   `(font-lock-builtin-face ((t (:foreground ,monokai-purple))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
-   `(font-lock-constant-face ((t (:foreground ,monokai-purple))))
+   `(font-lock-constant-face ((t (:foreground ,monokai-green))))
    `(font-lock-doc-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-magenta))))
