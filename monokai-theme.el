@@ -92,6 +92,7 @@
 (defun switch-to-term-color-if-necessary (frame)
   (set-variable 'color-theme-is-global nil)
   (select-frame frame)
+  (load-theme 'monokai t)
   (when (not window-system)
     (custom-theme-set-faces 'monokai `(default ((t (:background nil)))))))
 ;; hook on after-make-frame-functions
