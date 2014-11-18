@@ -81,15 +81,21 @@
    ;; zencoding uses this
    `(tooltip ((t (:background ,monokai-yellow-light :foreground ,monokai-yellow-dark))))))
 
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name)))
-  (when (not window-system)
-    (custom-set-faces '(default ((t (:background nil)))))))
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'monokai)
+
+;; test for each frame or console
+(defun switch-to-term-color-if-necessary (frame)
+  (set-variable 'color-theme-is-global nil)
+  (select-frame frame)
+  (when (not window-system)
+    (custom-theme-set-faces 'monokai `(default ((t (:background nil)))))))
+;; hook on after-make-frame-functions
+(add-hook 'after-make-frame-functions 'switch-to-term-color-if-necessary)
 
 ;; Local Variables:
 ;; no-byte-compile: t
