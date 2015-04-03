@@ -18,7 +18,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.
 
-(unless (>= 24 emacs-major-version)
+(unless (<= 24 emacs-major-version)
   (error "monokai-theme requires Emacs 24 or later."))
 
 (deftheme monokai
@@ -104,11 +104,18 @@
    `(tooltip ((t (:background ,monokai-yellow-light :foreground ,monokai-yellow-dark))))))
 
 ;;;###autoload
-(when load-file-name
+(when (and (boundp 'custom-theme-load-path)
+           load-file-name)
+  ;; add theme folder to `custom-theme-load-path' when installing over MELPA
   (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name)))
-  (when (not window-system)
-    (custom-theme-set-faces '(default ((t (:background 'nil)))))))
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+;; ;;;###autoload
+;; (when load-file-name
+;;   (add-to-list 'custom-theme-load-path
+;;                (file-name-as-directory (file-name-directory load-file-name)))
+;;   (when (not window-system)
+;;     (custom-theme-set-faces '(default ((t (:background 'nil)))))))
 
 (provide-theme 'monokai)
 
